@@ -4,7 +4,6 @@
 	<title>Email</title>
 </head>
 <body>
-	<header><a href="index.html">Home</a></header>
 	<form name="email" action="thank_you.html" method="post">
 	<fieldset>
 		<div>
@@ -13,13 +12,15 @@
 		</div>
 		<div>
 		<label>Email:</label>
-		<input type="text" name="Email">
+		<input type="text" name="email">
+		</div>
+		<br>
+		<div>
+		<textarea rows="5" cols="50" placeholder="Message here."></textarea>
 		</div>
 	</fieldset>
-	<fieldset>
-		<textarea rows="5" cols="25" placeholder="Message here."></textarea>
-	</fieldset>
 	<button type="submit">Otter's are the best</button>
+	<button type="submit" formaction="index.html">Take me back!</button>
 	</form>
 </body>
 </html>
