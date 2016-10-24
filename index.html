@@ -5,60 +5,74 @@
 	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
 <!-- 	<style >
 		h2 {color: red}
 	</style> -->
 </head>
 <body>
-	<h1>Otters in NYC</h1>
-	<!-- <hr> -->
-	<div>
-		<nav >
-			<a href="https://en.wikipedia.org/wiki/Otter">Wiki</a>
-			&nbsp;
-			<a href="contact.html">Contact Us</a>
-		</nav>
-	</div>
-	<!-- <hr> -->
-	<section>
-		<h2>Hello fellow Otter enthusiasts!</h2>
-		<p>Welcome to the site about Otters! First of all, I think we can agree that THEY'RE <b><em>GREAT!</em></b> But more importantly you can visit them right now in the NYC area. The <a href="http://nyaquarium.com/visitor-info/getting-here">NYAquarium</a> is located on the Coney Island Boardwalk.
-		</p>
-	</section>
-	<section>
-		<h2>Looking for Otters in the wild?</h2>
-		<ul>
-			<li><a href="http://www.dec.ny.gov/outdoor/55671.html">Mongaup Valley Wildlife Management Area</a></li>
-			<li><a href="http://www.dec.ny.gov/outdoor/55964.html">Newcomb Visitor Interpretive Center</a></li>
-			<li><a href="http://www.dec.ny.gov/outdoor/55683.html">Paul Smith's Visitor Interpretive Center</a></li>
-			<li><a href="http://www.dec.ny.gov/outdoor/55914.html">The Wild Center</a></li>
-		</ul>
-	</section>
-	<section>
-		<h2>River Otters</h2>
-		<h4><i>Lontra canadensis</i></h4>
-		<p>The River Otter is a native to all watersheds of New York, due to unregulated trapping, their numbers had been on a decline. Legal protection was established in 1936 and removed after a few years, but with greater restrictions. Due to the initial stress on the otter population, river otters were only found in one part of the NY state area, but the government stepped in with a plan!</p>
-		<blockquote cite="http://www.dec.ny.gov/animals/9355.html">
-			In the late 1990s, the New York River Otter Project aimed to restore river otter to the watersheds of western New York. Volunteers and DEC staff live-trapped otter primarily in the Adirondacks (DEC Regions 5 and 6), but some otter from the Catskills and Hudson Valley (DEC Regions 3 and 4) were included as well. From 1995 through 2000, 279 river otter were captured in eastern New York and released at 16 different sites across the western part of the state. Some of the release sites in western New York had been devoid of otter populations for longer than many local residents could remember, and the public was very excited about the project and the return of the otter to these watersheds.
-			<!-- <br>
-			<br> -->
-			Life history studies have shown that otter are dependent upon permanent watersheds, and otter may be found in rivers, lakes ponds, small streams, marshes and other inland wetlands. Suitable habitat will exhibit a high percentage of emergent vegetation, or in the case of natural waterways, expansive riparian corridors. Throughout most of their range, there is a close relationship between beaver and river otter populations, indicated by a positive relationship between annual trapper harvests of the two species.
-		</blockquote>
-		<cite>-<a href="http://www.dec.ny.gov/animals/9355.html">DEC.ny.gov</a></cite>
-	<!-- <hr> -->
-		<h2>Analyzing a Website</h2>
-		<h4><a href="http://www.dec.ny.gov/index.html">Department of Environmental Conservation</a></h4>
-		<p>As my primary reference for Otter information, I found that it was not too difficult to navigate, but there were alot of styling elements that I had not seen before, such as the scrollable blocks of content. The first thing that drew my attention when I inspected the source code, was that there were comments made by the person who designed this page I suppose. I found that these comments were very helpful in looking through the code; which is when I realized that this person only use the <code>div</code> tag throughout the entire site. Maybe some of the comments would not have been required if the person did not only rely on the<code>div</code> tag. However, they may have some other purpose for using the <code>div</code> tag instead of say, the <code>section</code> tag. Since there are many elements that I have not seen before. By comparing which parts of the site are being highlighted, I can gain some vague idea of what these elements do for the site visually.</p>
-	</section>
+	<main>
+		<h1>Otters in NYC</h1>
+		<!-- <hr> -->
+		<div id="navbar">
+			<nav >
+				<a href="https://en.wikipedia.org/wiki/Otter">Wiki</a>
+				&nbsp;
+				<a href="contact.html">Contact Us</a>
+			</nav>
+		</div>
+		<!-- <hr> -->
+		<section>
+			<h2>Hello fellow Otter enthusiasts!</h2>
+			<div class="content">
+				<p>Welcome to the site about Otters! First of all, I think we can agree that THEY'RE <b><em>GREAT!</em></b> But more importantly you can visit them right now in the NYC area. The <a href="http://nyaquarium.com/visitor-info/getting-here">NYAquarium</a> is located on the Coney Island Boardwalk.
+				</p>
+			</div>
+		</section>
+		<section id="otter_links">
+			<h2>Looking for Otters in the wild?</h2>
+			<ul>
+				<li><a href="http://www.dec.ny.gov/outdoor/55671.html">Mongaup Valley Wildlife Management Area</a></li>
+				<li><a href="http://www.dec.ny.gov/outdoor/55964.html">Newcomb Visitor Interpretive Center</a></li>
+				<li><a href="http://www.dec.ny.gov/outdoor/55683.html">Paul Smith's Visitor Interpretive Center</a></li>
+				<li><a href="http://www.dec.ny.gov/outdoor/55914.html">The Wild Center</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>River Otters</h2>
+			<h4><i>Lontra canadensis</i></h4>
+			<div class="content">
+				<p>The River Otter is a native to all watersheds of New York, due to unregulated trapping, their numbers had been on a decline. Legal protection was established in 1936 and removed after a few years, but with greater restrictions. Due to the initial stress on the otter population, river otters were only found in one part of the NY state area, but the government stepped in with a plan!</p>
+			</div>
+<!-- 			<aside>
+ -->				<blockquote cite="http://www.dec.ny.gov/animals/9355.html">
+					In the late 1990s, the New York River Otter Project aimed to restore river otter to the watersheds of western New York. Volunteers and DEC staff live-trapped otter primarily in the Adirondacks (DEC Regions 5 and 6), but some otter from the Catskills and Hudson Valley (DEC Regions 3 and 4) were included as well. From 1995 through 2000, 279 river otter were captured in eastern New York and released at 16 different sites across the western part of the state. Some of the release sites in western New York had been devoid of otter populations for longer than many local residents could remember, and the public was very excited about the project and the return of the otter to these watersheds.
+					<br>
+					<br>
+					Life history studies have shown that otter are dependent upon permanent watersheds, and otter may be found in rivers, lakes ponds, small streams, marshes and other inland wetlands. Suitable habitat will exhibit a high percentage of emergent vegetation, or in the case of natural waterways, expansive riparian corridors. Throughout most of their range, there is a close relationship between beaver and river otter populations, indicated by a positive relationship between annual trapper harvests of the two species.
+				
+				<cite>- <a href="http://www.dec.ny.gov/animals/9355.html">DEC.ny.gov</a></cite>
+				</blockquote>
+<!-- 			</aside>
+ -->		<!-- <hr> -->
+		</section>
+		<section>
+			<h2>Analyzing a Website</h2>
+			<h4><a href="http://www.dec.ny.gov/index.html">Department of Environmental Conservation</a></h4>
+			<p>As my primary reference for Otter information, I found that it was not too difficult to navigate, but there were alot of styling elements that I had not seen before, such as the scrollable blocks of content. The first thing that drew my attention when I inspected the source code, was that there were comments made by the person who designed this page I suppose. I found that these comments were very helpful in looking through the code; which is when I realized that this person only use the <code>div</code> tag throughout the entire site. Maybe some of the comments would not have been required if the person did not only rely on the<code>div</code> tag. However, they may have some other purpose for using the <code>div</code> tag instead of say, the <code>section</code> tag. Since there are many elements that I have not seen before. By comparing which parts of the site are being highlighted, I can gain some vague idea of what these elements do for the site visually.</p>
+		</section>
+	</main>
+
 	<div id="spinning_otter">
 		<img src="images/spinning_otter.gif" alt="spinning_otter" width="500" height="281">
 	</div>
-	<div class="Header">
-		<h1><i>GO OTTERS 2017!</i></h1>
+	<div id="banner">
+		<h1>GO OTTERS 2017!</h1>
 	</div>
 
 	<footer>
-		<a href="redirect.html">Complaints?</a>
+		<span><a href="redirect.html">Complaints?</a></span>
 	</footer>
 	
 
